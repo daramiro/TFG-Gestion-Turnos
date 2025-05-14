@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miempresa.Controller">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="600.0">
+         <top>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #2da758;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" layoutX="201.0" layoutY="83.0" prefHeight="17.0" prefWidth="199.0" text="MiEmpresa" textFill="#bfbfd3">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Label>
+                  <Circle fill="#8a3b3b00" layoutX="301.0" layoutY="100.0" radius="79.0" stroke="#4530bf" strokeType="INSIDE" />
+                  <Circle fill="#4530bf" layoutX="188.0" layoutY="48.0" radius="13.0" stroke="BLACK" strokeType="INSIDE">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Circle>
+                  <Circle fill="#4530bf" layoutX="188.0" layoutY="149.0" radius="13.0" stroke="BLACK" strokeType="INSIDE">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Circle>
+                  <Circle fill="#4530bf" layoutX="409.0" layoutY="48.0" radius="13.0" stroke="BLACK" strokeType="INSIDE">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Circle>
+                  <Circle fill="#4530bf" layoutX="409.0" layoutY="149.0" radius="13.0" stroke="BLACK" strokeType="INSIDE">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Circle>
+                  <Line endX="102.0" layoutX="120.0" layoutY="96.0" startX="26.0" stroke="#4530bf">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Line>
+                  <Line endX="100.0" layoutX="359.0" layoutY="96.0" startX="21.0" stroke="#4530bf">
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Line>
+               </children>
+            </AnchorPane>
+         </top>
+         <bottom>
+            <AnchorPane prefHeight="256.0" prefWidth="600.0" style="-fx-background-color: #dbe3de;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" layoutX="20.0" layoutY="115.0" prefHeight="17.0" prefWidth="199.0" text="Inicio Sesión" textFill="#4530bf">
+                     <font>
+                        <Font name="Arial Bold" size="24.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="248.0" layoutY="82.0" prefHeight="21.0" prefWidth="104.0" text="Usuario" textFill="#4530bf">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Label>
+                  <Label alignment="CENTER" layoutX="248.0" layoutY="142.0" prefHeight="21.0" prefWidth="104.0" text="Contraseña" textFill="#4530bf">
+                     <font>
+                        <Font name="Arial" size="18.0" />
+                     </font>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </Label>
+                  <TextField fx:id="campoUser" layoutX="397.0" layoutY="80.0" promptText="Usuario" />
+                  <PasswordField fx:id="campoPass" layoutX="397.0" layoutY="140.0" promptText="Contraseña" />
+                  <Button fx:id="botonInicio" layoutX="426.0" layoutY="201.0" mnemonicParsing="false" onAction="#botonInicioEnAccion" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #2da758;" text="Inicio" textFill="#4530bf" />
+                  <Button fx:id="botonCancelar" layoutX="72.0" layoutY="201.0" mnemonicParsing="false" onAction="#botonCancelarEnAccion" prefHeight="30.0" prefWidth="95.0" style="-fx-background-color: #2da758;" text="Cancelar" textFill="#4530bf" />
+                  <Label fx:id="campoMensajeInicio" alignment="CENTER" layoutX="264.0" layoutY="35.0" prefHeight="18.0" prefWidth="287.0" textFill="#ff1920" />
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

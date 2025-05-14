@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="646.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miempresa.VistaManagerController">
+   <children>
+      <Label layoutX="195.0" layoutY="14.0" text="Turnos Semanales">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Button fx:id="botonGenerarTurnos" layoutX="87.0" layoutY="67.0" onAction="#botonGenerarTurnosEnAccion" prefHeight="32.0" prefWidth="100.0" text="Generar" />
+      <TableView fx:id="tablaTurnos" layoutX="30.0" layoutY="120.0" prefHeight="440.0" prefWidth="586.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="55.0" text="ID" />
+            <TableColumn fx:id="colEmpleado" prefWidth="91.0" text="Empleado" />
+            <TableColumn fx:id="colLunes" prefWidth="67.0" text="Lunes" />
+            <TableColumn fx:id="colMartes" prefWidth="72.0" text="Martes" />
+            <TableColumn fx:id="colMiercoles" prefWidth="83.0" text="Miércoles" />
+            <TableColumn fx:id="colJueves" prefWidth="72.0" text="Jueves" />
+            <TableColumn fx:id="colViernes" prefWidth="69.0" text="Viernes" />
+            <TableColumn fx:id="colSabado" prefWidth="69.0" text="Sábado" />
+            <TableColumn fx:id="colDomingo" prefWidth="108.0" text="Domingo" />
+         </columns>
+      </TableView>
+      <Label layoutX="209.0" layoutY="75.0" text="Hora inicio:" />
+      <Label layoutX="397.0" layoutY="75.0" text="Hora fin:" />
+      <TextField fx:id="horaInicioTurno" layoutX="280.0" layoutY="71.0" prefHeight="25.0" prefWidth="100.0" />
+      <TextField fx:id="horaFinalTurno" layoutX="459.0" layoutY="71.0" prefHeight="25.0" prefWidth="100.0" />
+   </children>
+</AnchorPane>

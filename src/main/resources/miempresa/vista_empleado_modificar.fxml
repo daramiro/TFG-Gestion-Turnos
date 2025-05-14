@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="229.0" prefWidth="565.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miempresa.ControllerEmpleadoModificar">
+   <children>
+      <Button fx:id="botonModificar" layoutX="473.0" layoutY="83.0" mnemonicParsing="false" onAction="#botonCambiarEnAccion" text="Modificar" />
+      <Button fx:id="botonCerrar" layoutX="482.0" layoutY="124.0" mnemonicParsing="false" onAction="#botonCerrarEnAccion" text="Cerrar" />
+      <Label layoutX="67.0" layoutY="45.0" text="Cambiarl email:">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="88.0" text="Cambiar contraseña:">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <TextField fx:id="campoEmail" layoutX="208.0" layoutY="40.0" prefHeight="25.0" prefWidth="227.0" />
+      <Label layoutX="26.0" layoutY="128.0" text="Introduce la contraseña actual:">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="169.0" text="Introudce la contraseña nueva:">
+         <font>
+            <Font name="Arial" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="campoMensaje" layoutX="202.0" layoutY="87.0" prefHeight="17.0" prefWidth="227.0" textFill="#f80505" />
+      <PasswordField fx:id="campoPassActual" layoutX="208.0" layoutY="124.0" prefHeight="25.0" prefWidth="157.0" />
+      <PasswordField fx:id="campoPassNueva" layoutX="208.0" layoutY="164.0" prefHeight="25.0" prefWidth="157.0" />
+   </children>
+</AnchorPane>

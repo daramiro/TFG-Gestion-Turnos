@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="389.0" prefWidth="683.0" style="-fx-background-color: #2da758;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="miempresa.VistaEmpleadoController">
+   <children>
+      <TableView fx:id="tablaTurnos" layoutX="21.0" layoutY="138.0" prefHeight="126.0" prefWidth="640.0">
+         <columns>
+            <TableColumn fx:id="colID" prefWidth="36.0" text="ID" />
+            <TableColumn fx:id="colEmpleado" prefWidth="72.0" text="Empleado" />
+            <TableColumn fx:id="colLunes" prefWidth="69.0" text="Lunes" />
+            <TableColumn fx:id="colMartes" prefWidth="76.0" text="Martes" />
+            <TableColumn fx:id="colMiercoles" prefWidth="72.0" text="Miércoles" />
+            <TableColumn fx:id="colJueves" prefWidth="74.0" text="Jueves" />
+            <TableColumn fx:id="colViernes" prefWidth="78.0" text="Viernes" />
+            <TableColumn fx:id="colSabado" prefWidth="84.0" text="Sábado" />
+            <TableColumn fx:id="colDomingo" prefWidth="78.0" text="Domingo" />
+         </columns>
+      </TableView>
+      <Button layoutX="241.0" layoutY="298.0" mnemonicParsing="false" onAction="#botonEditarEmpleado" text="Modificar" />
+      <Button layoutX="373.0" layoutY="298.0" mnemonicParsing="false" onAction="#botonCerrarSesionEnAccion" text="Cerrar" />
+      <Label alignment="CENTER" layoutX="247.0" layoutY="43.0" prefHeight="17.0" prefWidth="193.0" text="Bienvenido" textFill="#4530bf">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+         <effect>
+            <InnerShadow />
+         </effect>
+      </Label>
+      <Label fx:id="nombreEmpleado" alignment="CENTER" layoutX="302.0" layoutY="85.0" prefHeight="27.0" prefWidth="84.0">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
